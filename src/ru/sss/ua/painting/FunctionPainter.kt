@@ -19,7 +19,7 @@ class FunctionPainter(
         with(plane) {
             (g as Graphics2D).apply {
                 color = funColor
-                stroke = BasicStroke(2F)//постоение можду соседними пиклселями
+                stroke = BasicStroke(2F)
                 for (x in 0 until width) {
 
                     drawLine(x, yCrt2Src(function(xSct2Crt(x))),

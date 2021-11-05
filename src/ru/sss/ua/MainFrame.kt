@@ -86,12 +86,6 @@ class MainFrame:JFrame() {
         var p : PointPainter = PointPainter(mainPlane,tt)
         p.coLor=Color.RED
 
-  //      for(i in -5..5) {
-    //        tt[i.toDouble()] = ((i*i*i-i+32*i)%5).toDouble()
-      //  }
-
-    //    val sinPainter = FunctionPainter(mainPlane)
-      //  val cosPainter = FunctionPainter(mainPlane,Math::cos)
         val functionPainter = FunctionPainter(mainPlane,::polin).apply { funColor = Color.GREEN }
 
         val diffFunctionPainter = FunctionPainter(mainPlane,::poldiff).apply { funColor = Color.BLUE }
